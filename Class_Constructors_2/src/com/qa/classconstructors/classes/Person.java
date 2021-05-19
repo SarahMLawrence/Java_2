@@ -5,7 +5,7 @@ public class Person {
 	// ***********//
 	// ATTRIBUTES //
 	// ***********//
-	public String name;
+	private String name = "Sarah";
 	public int age;
 	public String gender;
 	public boolean isBreathing;
@@ -23,6 +23,12 @@ public class Person {
 	// ********//
 	// METHODS //
 	// ********//
+
+	// GET NAME
+	public String getName() {
+		return name;
+	}
+
 	public void read(Book item) {
 		item.read();
 		System.out.println(this.name + " is reading the book titled: " + item.title);
